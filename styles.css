@@ -9,7 +9,7 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: capitalize;text-decoration: none;
     transition: all .2s linear;
 }
 
@@ -25,8 +25,7 @@ html{
     scroll-padding-top: 6rem;
 }
 body{
-    background: #fff
-    ;
+    background: #fff;
 }
 section{
     padding: 2rem 9%;
@@ -42,6 +41,7 @@ section{
 }
 
 .btn{
+    text-decoration: none;
     display: inline-block;
     padding: .8rem 3rem;
     border: .2rem solid var(--blue);
@@ -84,6 +84,7 @@ header{
 }
 header .logo{
     font-size: 2.5rem;
+    text-decoration: none;
     font-weight: bolder;
     color: #666;
 }
@@ -92,6 +93,7 @@ header .logo i{
     color: var(--blue);
 }
 header .navbar a{
+    text-decoration: none;
     font-size: 2rem;
     margin-left: 2rem;
     color: #666;
@@ -99,6 +101,18 @@ header .navbar a{
 header .navbar a:hover{
     color: var(--blue);
 }
+
+header .navbar2 a{
+    text-decoration: none;   
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+}
+header .navbar2 a:hover{
+    color: var(--blue);
+}
+
+
 #menu-bar{
     font-size: 3rem;
     cursor: pointer;
@@ -163,6 +177,9 @@ header .navbar a:hover{
     color: #666;
     padding: 1rem 0;
 }
+.home .content a{
+    font-size: 1.4rem;
+}
  /* home ends */
 
 
@@ -217,6 +234,9 @@ header .navbar a:hover{
     font-size: 1.7rem;
     color: #666;
     padding: 1rem 0;
+}
+.explicacion .content a{
+    font-size: 1.4rem;
 }
  /* explicacion ends */
 
@@ -273,7 +293,9 @@ header .navbar a:hover{
     color: #666;
     padding: 1rem 0;
 }
-
+.resultado .content a{
+    font-size: 1.4rem;
+}
  /* resultado ends */
 
 
@@ -322,7 +344,142 @@ header .navbar a:hover{
 }
  /* programa ends */
 
+ /* s-primario starts */
+ .s-primario{
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 50vh;
+    align-items: center;
+    background-size: cover;
+    padding-top: 6.5rem;
+    background-position: center;
+ }
+ .s-primario .content{
+    flex: 1 1 40rem;
+    padding-top: 6.8rem;
+ }
 
+@keyframes float{
+    0% {
+        transform: translateY(0rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+
+.s-primario .content h3{
+    font-size: 5rem;
+    color: #333;
+}
+.s-primario .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.s-primario .content a{
+    font-size: 1.4rem;
+}
+
+ /* s-secundario starts */
+ .s-secundario{
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 60vh;
+    align-items: center;
+    background-size: cover;
+    padding-top: 6.5rem;
+    background-position: center;
+ }
+ .s-secundario .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+ }
+.s-secundario .image{
+    flex: 1 1 40rem;
+}
+.s-secundario .image img{
+    width: 100%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+
+.s-secundario .content h3{
+    font-size: 5rem;
+    color: #333;
+}
+.s-secundario .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.s-secundario .content a{
+    font-size: 1.4rem;
+}
+
+
+ /* antedecentes starts */
+ .antedecentes{
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 60vh;
+    align-items: center;
+    background-size: cover;
+    padding-top: 6.5rem;
+    background-position: center;
+ }
+ .antedecentes .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+ }
+.antedecentes .image{
+    flex: 1 1 40rem;
+}
+.antedecentes .image img{
+    width: 100%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+
+.antedecentes .content h3{
+    font-size: 5rem;
+    color: #333;
+}
+.antedecentes .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.antedecentes .content a{
+    font-size: 1.4rem;
+}
 .speciality .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -369,30 +526,6 @@ header .navbar a:hover{
     transform: translateY(100%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width:991px){
     html{
         font-size: 55%;
@@ -437,23 +570,23 @@ header .navbar a:hover{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+button{
+    text-decoration: none;
+    font-size: 5.7rem;
+}
+.progress-bar-container {
+    width: 100%;
+    height: 6px;
+    background-color: lightgray;
+    position: fixed;
+    top: 65px; /* Ajusta la posición vertical según la altura de tu encabezado */
+    left: 0;
+    z-index: 9998;
+  }
+  
+  #progress-bar {
+    height: 100%;
+    background-color: #2596be;
+    width: 0%;
+    transition: width 0.2s ease-in-out;
+  }
