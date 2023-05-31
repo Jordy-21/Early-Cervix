@@ -178,7 +178,8 @@ header .navbar2 a:hover{
     padding: 1rem 0;
 }
 .home .content a{
-    font-size: 1.4rem;
+    font-size: 2.5rem;
+    border: 1px solid var(--blue);
 }
  /* home ends */
 
@@ -236,10 +237,10 @@ header .navbar2 a:hover{
     padding: 1rem 0;
 }
 .explicacion .content a{
-    font-size: 1.4rem;
+    font-size: 2.5rem;
+    border: 1px solid var(--blue);
 }
  /* explicacion ends */
-
 
  /* resultado starts */
  .resultado{display: flex;
@@ -294,7 +295,8 @@ header .navbar2 a:hover{
     padding: 1rem 0;
 }
 .resultado .content a{
-    font-size: 1.4rem;
+    font-size: 2.8rem;
+    border: 1px solid var(--blue);
 }
  /* resultado ends */
 
@@ -485,6 +487,13 @@ header .navbar2 a:hover{
     flex-wrap: wrap;
     gap: 1.5rem;
 }
+.speciality .heading a{
+    font-size: 2.8rem;
+    padding: 1.5rem;
+    width: 60rem;
+    border: 1px solid var(--blue);
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+}
 .speciality .box-container .box{
     flex: 1 1 30rem;
     position: relative;
@@ -518,6 +527,12 @@ header .navbar2 a:hover{
     font-size: 1.6rem;
     color: #666;
     padding: 1rem 0;
+}
+.speciality .box-container a{
+    font-size: 2.8rem;
+    
+    border: 1px solid var(--blue);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .speciality .box-container .box:hover .image{
     top: 0;
@@ -589,4 +604,23 @@ button{
     background-color: #2596be;
     width: 0%;
     transition: width 0.2s ease-in-out;
+  }
+.btn-secondary{
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 4rem;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+.btn-outline-secondary {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 4rem;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
   }
